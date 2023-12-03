@@ -1,90 +1,86 @@
-import Head from 'next/head';
-import Header from '@components/Header';
-import Footer from '@components/Footer';
+<!DOCTYPE html>
+<html lang="en">
 
-export default function Home() {
-  return (
-    <div className="container">
-      <Head>
-        <title>Your App Name</title>
-        <meta
-          name="description"
-          content="A description of your app for search engines and social media."
-        />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
-      <Header title="Welcome to Your App!" />
-
-      <main>
-        <section className="hero">
-          <h1 className="title">Hello, Next.js!</h1>
-          <p className="description">
-            Get started by editing <code>pages/index.js</code>
-          </p>
-        </section>
-
-        <section className="features">
-          <h2>Key Features</h2>
-          <ul>
-            <li>Server-side rendering with Next.js</li>
-            <li>Component-based architecture</li>
-            <li>Customizable styles with CSS modules</li>
-            {/* Add more features as needed */}
-          </ul>
-        </section>
-      </main>
-
-      <Footer />
-
-      <style jsx>{`
-        .container {
-          min-height: 100vh;
-          padding: 0 0.5rem;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Party Packages</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
         }
 
-        main {
-          padding: 5rem 0;
-          flex: 1;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
+        h1 {
+            text-align: center;
         }
 
-        .hero {
-          width: 100%;
-          text-align: center;
+        .package {
+            margin-bottom: 20px;
         }
 
-        .title {
-          margin: 0;
-          line-height: 1.15;
-          font-size: 4rem;
+        .item {
+            margin-left: 20px;
         }
+    </style>
+</head>
 
-        .description {
-          font-size: 1.5rem;
-          color: #333;
-        }
+<body>
+    <h1>Party Packages</h1>
 
-        .features {
-          margin: 3rem 0;
-        }
-
-        ul {
-          list-style: none;
-          padding: 0;
-        }
-
-        li {
-          margin: 0.5rem 0;
-        }
-      `}</style>
+    <div class="package">
+        <h2>Package 1 - €35</h2>
+        <p>- 1 tafel</p>
+        <p>- 10 klapstoelen</p>
+        <p>- 10 stoelhoezen</p>
+        <p>- 10 strikken/stretch band</p>
+        <p>- 1 tafelkleed</p>
+        <p>- 1 middenstuk</p>
     </div>
-  );
-}
+
+    <div class="package">
+        <h2>Package 2 - €45</h2>
+        <p>- 10 stoelhoezen</p>
+        <p>- 10 strikken</p>
+        <p>- 1 tafelkleed</p>
+        <p>- 1 middenstuk</p>
+        <p>- 10 dinerborden</p>
+        <p>- 10 besteksets</p>
+        <p>- 10 wijnglazen</p>
+        <p>- 2 karaffen</p>
+        <p>- 2 nootjesschalen</p>
+    </div>
+
+    <div class="package">
+        <h2>Package 3 - €55</h2>
+        <p>- 10 stoelhoezen</p>
+        <p>- 10 strikken</p>
+        <p>- 1 tafelkleed</p>
+        <p>- 1 middenstuk</p>
+        <p>- 10 dinerborden</p>
+        <p>- 10 besteksets</p>
+        <p>- 10 wijnglazen</p>
+        <p>- 2 karaffen</p>
+        <p>- 2 nootjesschaaltjes</p>
+        <p>- 10 stoelen</p>
+        <p>- 1 tafel</p>
+    </div>
+
+    <h2>Individual Items</h2>
+
+    <div class="item">- Borden: €0.30</div>
+    <div class="item">- Wijnglazen: €0.30</div>
+    <div class="item">- Stoelen: €1.00</div>
+    <div class="item">- Stoelhoes: €1.00</div>
+    <div class="item">- Stoelsjerp(goud): €0.50</div>
+    <div class="item">- Tafels: €7.00</div>
+    <div class="item">- Tafelkleed rond: €6.00</div>
+    <div class="item">- Tafelkleed vierkant: €6.00</div>
+    <div class="item">- Tafelloper: €5.00</div>
+    <div class="item">- Middenstuk: €5.00</div>
+    <div class="item">- Notenschaal: €0.30</div>
+    <div class="item">- Karaaf: €0.40</div>
+
+</body>
+
+</html>
